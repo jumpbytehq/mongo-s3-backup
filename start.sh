@@ -25,6 +25,7 @@ echo "CRON_ENVIRONMENT"
 echo "$CRON_ENVIRONMENT"
 
 # crontab -l > mycron
+echo "$CRON_ENVIRONMENT$CRON_SCHEDULE $CRON_COMMAND"
 echo "$CRON_ENVIRONMENT$CRON_SCHEDULE $CRON_COMMAND" >> mycron
 crontab mycron
 rm mycron
